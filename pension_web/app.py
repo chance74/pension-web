@@ -2,7 +2,6 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
-# 임시 객실 데이터 (나중에 실제 펜션 정보로 수정하시면 됩니다)
 ROOMS = [
     {
         "id": 1,
@@ -10,7 +9,7 @@ ROOMS = [
         "desc": "통창으로 숲속 뷰가 펼쳐지는 복층형 프리미엄 객실입니다.",
         "price": "250,000원 / 1박",
         "capacity": "기준 2인 / 최대 4인",
-        "image": "https://images.unsplash.com/photo-1587061949409-02df41d5e562?auto=format&fit=crop&w=800&q=80"
+        "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80"
     },
     {
         "id": 2,
@@ -32,11 +31,14 @@ ROOMS = [
 
 @app.route('/')
 def home():
-    # index.html 파일을 불러오면서 ROOMS 데이터를 함께 전달합니다.
     return render_template('index.html', rooms=ROOMS)
 
-import os
+# 👉 예약 페이지 주소 새로 추가!
+@app.route('/reservation')
+def reservation():
+    return render_template('reservation.html', rooms=ROOMS)
 
+import os
 if __name__ == '__main__':
     port = int(os.environ.get("PORT", 5000))
     app.run(host="0.0.0.0", port=port)
