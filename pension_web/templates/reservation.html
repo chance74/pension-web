@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>라센느 (La Seine) - 예약 문의</title>
+    <title>여백의 낙 (餘白之樂) - 예약 문의</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;600&family=Pretendard:wght@300;400;500;600&display=swap');
-        body { font-family: 'Pretendard', sans-serif; background-color: #FBF9F5; color: #2C2A29; }
+        body { font-family: 'Pretendard', sans-serif; background-color: #FBF9F5; color: #2C2A29; word-break: keep-all; }
         .serif-title { font-family: 'Noto Serif KR', serif; }
     </style>
 </head>
@@ -16,7 +16,10 @@
     <!-- 상단 네비게이션 바 -->
     <header class="bg-[#FBF9F5]/90 backdrop-blur-md fixed top-0 left-0 right-0 z-50 border-b border-stone-200/60">
         <div class="max-w-6xl mx-auto px-6 py-5 flex justify-between items-center">
-            <a href="/" class="serif-title text-xl font-semibold tracking-widest text-stone-900">LA SEINE</a>
+            <a href="/" class="flex items-center space-x-3">
+                <span class="serif-title text-xl font-medium tracking-[0.2em] text-stone-900">餘白之樂</span>
+                <span class="text-[11px] tracking-[0.25em] text-stone-400 uppercase border-l border-stone-300 pl-3">NAK</span>
+            </a>
             <nav class="space-x-8 text-sm font-light tracking-wide text-stone-600">
                 <a href="/" class="hover:text-stone-900 transition">Home</a>
                 <a href="/#about" class="hover:text-stone-900 transition">About</a>
@@ -55,13 +58,13 @@
                 </div>
                 <div>
                     <label class="block text-xs uppercase tracking-wider text-stone-500 mb-2">Stay Date</label>
-                    <input type="text" placeholder="예: 2026-05-10 ~ 2026-05-11 (1박)" class="w-full bg-[#FBF9F5] border border-stone-200 px-4 py-3.5 text-sm focus:outline-none focus:border-stone-500 transition">
+                    <input type="text" placeholder="예: 2026-11-20 ~ 2026-11-21 (1박)" class="w-full bg-[#FBF9F5] border border-stone-200 px-4 py-3.5 text-sm focus:outline-none focus:border-stone-500 transition">
                 </div>
                 <div>
                     <label class="block text-xs uppercase tracking-wider text-stone-500 mb-2">Inquiry / Requests</label>
                     <textarea rows="4" placeholder="기타 문의사항을 남겨주세요" class="w-full bg-[#FBF9F5] border border-stone-200 px-4 py-3.5 text-sm focus:outline-none focus:border-stone-500 transition"></textarea>
                 </div>
-                <button type="button" onclick="alert('예약 문의가 정상적으로 접수되었습니다!')" 
+                <button type="button" onclick="alert('여백의 낙 예약 문의가 정상적으로 접수되었습니다!')" 
                         class="w-full bg-stone-900 text-white py-4 text-xs tracking-[0.2em] uppercase hover:bg-stone-800 transition duration-300">
                     Submit Reservation
                 </button>
@@ -71,8 +74,8 @@
 
     <!-- 푸터 -->
     <footer class="bg-stone-900 text-stone-400 py-12 text-center text-xs font-light tracking-widest">
-        <p class="serif-title text-sm text-stone-300 mb-3">LA SEINE PENSION</p>
-        <p>© 2026 LA SEINE. All rights reserved.</p>
+        <p class="serif-title text-sm text-stone-300 mb-3">餘白之樂 · 여백의 낙</p>
+        <p>© 2026 餘白之樂. All rights reserved.</p>
     </footer>
 
 </body>
