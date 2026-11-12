@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>라센느 (La Seine) - 감성 스테이</title>
+    <!-- Tailwind CSS 불러오기 -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* 감성적인 느낌을 위한 은은한 세리프 폰트 적용 */
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;600&family=Pretendard:wght@300;400;500;600&display=swap');
+        body {
+            font-family: 'Pretendard', sans-serif;
+            background-color: #FBF9F5; /* 따뜻한 아이보리 톤 */
+            color: #2C2A29;
+        }
+        .serif-title {
+            font-family: 'Noto Serif KR', serif;
+        }
+    </style>
+</head>
+<body class="selection:bg-stone-200">
+
+    <!-- 1. 상단 네비게이션 바 -->
+    <header class="bg-[#FBF9F5]/90 backdrop-blur-md fixed top-0 left-0 right-0 z-50 border-b border-stone-200/60">
+        <div class="max-w-6xl mx-auto px-6 py-5 flex justify-between items-center">
+            <a href="#" class="serif-title text-xl font-semibold tracking-widest text-stone-900">LA SEINE</a>
+            <nav class="space-x-8 text-sm font-light tracking-wide text-stone-600">
+                <a href="#about" class="hover:text-stone-900 transition">About</a>
+                <a href="#rooms" class="hover:text-stone-900 transition">Rooms</a>
+                <a href="#location" class="hover:text-stone-900 transition">Location</a>
+                <a href="#reserve" class="text-stone-900 font-normal border-b border-stone-900 pb-0.5">Reservation</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 2. 메인 히어로 배너 (감성적인 대형 이미지와 여백) -->
+    <section class="relative h-[85vh] flex items-center justify-center text-center text-white pt-20">
+        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1800&q=80" 
+             alt="라센느 전경" class="absolute inset-0 w-full h-full object-cover brightness-[0.75]">
+        <div class="relative z-10 px-4 max-w-2xl mx-auto">
+            <p class="text-xs uppercase
